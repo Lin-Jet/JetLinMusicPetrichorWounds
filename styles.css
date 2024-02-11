@@ -402,6 +402,29 @@ tableul{
         list-style-type: none;
         transition-duration: 0.4s;
     }
+    .mainvideo{
+        border: red solid 3px;
+        width: 90vw;
+        height: 40vh;
+    }
+    .maindesciption{
+        width: 80vw;
+        top: 40%
+    }
+    .mainimg{
+        top: 90%;
+    }
+    .mimg-item1{
+        width: 20rem;
+    }
+    .mimg-item2{
+        width: 20rem;
+        transform: translateX(-10rem) rotate(28deg);
+    }
+    .mimg-item3{
+        width: 20rem;
+        transform: translate(10rem, 5rem) rotate(-30deg);
+    }
     .darkmode{
         margin-top: 8rem;
     }
