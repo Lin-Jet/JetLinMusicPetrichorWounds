@@ -402,14 +402,18 @@ tableul{
         list-style-type: none;
         transition-duration: 0.4s;
     }
+    .maintitle{
+        left: 9%;
+    }
     .mainvideo{
         /* border: red solid 3px; */
         width: 90vw;
         height: 40vh;
+        top: 53%;
     }
     .maindesciption{
         width: 80vw;
-        top: 41%
+        top: 38%
     }
     .mainimg{
         top: 100%;
