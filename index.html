@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Album</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="mainbody">
+    <nav>
+        <ul class="navbar">
+            <h1 class="maintitle">Petrichor Wounds</h1>
+            <a href = "./index.html" class="nav-item"><li>Home</li></a>
+            <a href= "./Components/about.html" class="nav-item"><li>About / Commentary</li></a>
+            <a href= "./Components/photo.html" class="nav-item"><li>Photo's Used</li></a>
+            <a href = "./Components/other.html" class="nav-item"><li>Other Projects</li></a>
+        </ul>
+    </nav>
+    <button id="mode-toggle" class="darkmode">Dark Mode</button>
+
+    <div class="starcontainer"><p class="star">✦</p> <p class="star2">✦</p> <p class="star3">✦</p></div>
+    
+
+    <!-- <iframe class ="mainvideo" width="800" height="460" src="https://www.youtube.com/embed/BaS5_-J-7YM?si=ApgyK1qAPUSp2ObJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <iframe class ="mainvideo" width="800" height="460" src="https://www.youtube.com/embed/XKuN2_M2U4M?si=I-Lp3Z1m9DZ5qjwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <div class="maindesciption">
+        <h1>Petrichor Wounds By Malnutrition</h1>
+        <p>This album was origially going to be a simple 10 minute dark ambient song inspired by The Stalker by Andrei Tarovsky.  I was also interested in increasing my music theory knowledge, especially how to create chord progressions so that my song writing skills can improve.  Here I was using a lot of secondary dominants to lead into the tonic chord as well as tritone substitutions.  Then I made a bunch of note choices based on if they sound cool or not so at the end of the day I have no idea what is going on.</p>
+        <p>Malnutrition is by dark electronic music project, I have 2 albums and an ep under this project name and they can be found on my <a class="mainbandcampbutton" href="https://jetlin.bandcamp.com/" style="">Bandcamp</a></p>
+    </div>
+    
+    
+    <div class="mainimg"> 
+        <img class="mimg-item1" src="./Images/logic.png">
+        <img class="mimg-item2" src="./Images/meguitar.png" width="400rem"> 
+        <img class="mimg-item3" src="./Images/meguitar2.png" width="400rem">
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                if (body.classList.contains('dark-mode')) {
+                    modeToggle.textContent = 'Light Mode';
+                    // body.style.background = "linear-gradient(120deg, #1b4332,#52b788 )"
+                } else {
+                    modeToggle.textContent = 'Dark Mode';
+                    // body.style.background = "linear-gradient(120deg, #081c15 80%, #1b4332)"
+                }
+            });
+        });
+
+
+
+    </script>
+</body>
+    
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="../stylesphoto.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <h1 class="phototitle">Photo Gallery Page</h1>
+            <a href = "../index.html" class="nav-item"><li>Home</li></a>
+            <a href= "./about.html" class="nav-item"><li>About / Commentary</li></a>
+            <a href= "./photo.html" class="nav-item"><li>Photo's Used</li></a>
+            <a href = "./other.html" class="nav-item"><li>Other Projects</li></a>
+        </ul>
+    </nav>
+
+
+    <ul class="photonotes">
+        <h1>Photos by Moses</h1>
+        <p>Most of the photos used in the album were taken by Moses.  Some were taken by me. A few photos from Raw (2016) by Julia Ducournau, The Stalker, and The Colour of Pomegranates</p>
+        <li><a href="https://www.instagram.com/ocean.man1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Mo's Insta</a></li>
+        <li><a href="https://www.instagram.com/bird_on_a_fence?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Mo's Birding Insta</a</li>
+    </ul>
+    <br>
+    <br>
+
+    <br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
+
+    <div clas="photocontainer" id="imageContainer">
+    </div>
+
+    <script>
+        // Generate image elements dynamically
+        for (let i = 1; i <= 50; i++) {
+          let img = document.createElement('img');
+          img.src = `../Photos/${i}.JPG`;
+          img.width = '400';
+        
+          img.loading = 'lazy'; // Lazy loading attribute
+          document.getElementById('imageContainer').appendChild(img);
+        }
+    </script>
+</body>
+
+</html>
