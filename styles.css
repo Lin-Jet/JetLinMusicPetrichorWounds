@@ -403,16 +403,16 @@ tableul{
         transition-duration: 0.4s;
     }
     .mainvideo{
-        border: red solid 3px;
+        /* border: red solid 3px; */
         width: 90vw;
         height: 40vh;
     }
     .maindesciption{
         width: 80vw;
-        top: 40%
+        top: 41%
     }
     .mainimg{
-        top: 90%;
+        top: 100%;
     }
     .mimg-item1{
         width: 20rem;
