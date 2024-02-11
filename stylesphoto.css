@@ -26,6 +26,7 @@ body{
     display: flex;
     justify-content: right;
     align-content: baseline;
+    z-index: 10;
 }
 
 .phototitle{
