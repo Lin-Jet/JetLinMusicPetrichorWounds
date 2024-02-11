@@ -68,10 +68,11 @@ body{
     text-align: center;
     color: #d8f3dc;
     padding: 1rem;
+    padding-top: 0rem;
     font-size: 2em;
     
-    height: 10rem;
-
+    height: 15rem;
+    /* border: red solid 3px; */
 }
 p{
     font-size: 0.5em;
@@ -123,3 +124,18 @@ img {
     
 }
   
+@media screen and (min-width: 300px) and (max-width: 880px) {
+    .mainbody{
+        min-width: 300px;
+        max-width: 880px;
+    }
+    .navbar > a li{
+        margin-right: 2rem;
+        margin-top: 5rem;
+        list-style-type: none;
+        transition-duration: 0.4s;
+    }
+    #imageContainer{
+        margin-top: 20rem;
+    }
+}

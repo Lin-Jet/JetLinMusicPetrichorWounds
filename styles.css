@@ -17,7 +17,7 @@ body{
 
 .darkmode{
     position: absolute;
-    top: 4%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #d8f3dc;
@@ -387,4 +387,21 @@ tableul{
 }
 .ol1p{
     color: #d8f3dc;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 880px) {
+    .mainbody{
+        min-width: 300px;
+        max-width: 880px;
+    }
+    ul > a li{
+        margin-right: 2rem;
+        margin-top: 5rem;
+        list-style-type: none;
+        transition-duration: 0.4s;
+    }
+    .darkmode{
+        margin-top: 8rem;
+    }
 }
